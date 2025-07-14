@@ -1,5 +1,5 @@
 [project]
-name = "nullstools"
+name = "nulls_modtools"
 version = "1.0"
 description = "Инструменты для создания и упаковки модов на языке Python в Null's Brawl"
 authors = [
@@ -25,5 +25,5 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages.find]
-where = ["nullstools"]
+where = ["."]
 
