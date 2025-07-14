@@ -214,10 +214,9 @@ class Mod:
 
                 if assets_dir:
                     assets_path = Path(assets_dir)
-                    base_path = assets_path.parent
                     for file_path in assets_path.rglob("*"):
                         if file_path.is_file():
-                            arcname = file_path.relative_to(base_path)
+                            arcname = file_path.relative_to(assets_path)
                             zipf.write(file_path, arcname)
 
         else:
